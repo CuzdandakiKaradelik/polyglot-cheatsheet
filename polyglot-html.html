@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyglot's CheatSheet v2.0 - Advanced Atlas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <header class="main-header">
+            <h1>🌐 Polyglot's CheatSheet <span class="version">v2.0</span></h1>
+            <p class="subtitle">Dil ailelerini mimari olarak karşılaştıran profesyonel referans kılavuzu.</p>
+            
+            <div class="stats-panel">
+                <span>📊 Toplam Yapı: <strong id="stat-total">0</strong></span> | 
+                <span>🌍 Aktif Dil: <strong>6</strong></span>
+            </div>
+        </header>
+
+        <div class="control-panel">
+            <input type="text" id="search-input" placeholder="Kategori, kelime, kural veya dil arayın... (Örn: Zamir, Yo, am)">
+            
+            <div class="filter-group">
+                <button class="filter-btn active" data-family="all">Tüm Aileler</button>
+                <button class="filter-btn" data-family="germanic">Cermen Dilleri (🇬🇧 🇩🇪 🇳🇱)</button>
+                <button class="filter-btn" data-family="romance">Latin Dilleri (🇪🇸 🇫🇷 🇮🇹)</button>
+            </div>
+        </div>
+
+        <main id="atlas-container" class="cards-layout">
+            </main>
+    </div>
+
+    <script src="js/data/germanic.js"></script>
+    <script src="js/data/romance.js"></script>
+    <script src="js/core/engine.js"></script>
+    <script src="js/core/app.js"></script>
+</body>
+</html>
